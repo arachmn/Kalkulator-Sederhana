@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/title">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kalkulator"
+            android:gravity="center"
+            android:textSize="40dp">
+        </TextView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:id="@+id/number_Coloum"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:id="@+id/first_number"
+            android:hint="Fist Number"
+            android:inputType="phone">
+        </EditText>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:id="@+id/last_number"
+            android:hint="Last Number"
+            android:inputType="phone">
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/math_panel"
+        android:layout_below="@+id/number_Coloum"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_margin="10dp"
+            android:id="@+id/button_plus"
+            android:text="+"
+            android:textSize="36dp">
+        </Button>
+        <Button
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_margin="10dp"
+            android:id="@+id/button_minus"
+            android:text="-"
+            android:textSize="36dp">>
+        </Button>
+        <Button
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_margin="10dp"
+            android:id="@+id/button_multiply"
+            android:text="*"
+            android:textSize="36dp">>
+        </Button>
+        <Button
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_margin="10dp"
+            android:id="@+id/button_divide"
+            android:text="/"
+            android:textSize="36dp">>
+        </Button>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/math_equals"
+        android:layout_below="@+id/math_panel"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:layout_width="164dp"
+            android:layout_height="72dp"
+            android:layout_margin="10dp"
+            android:id="@+id/button_clear"
+            android:text="Clear"
+            android:textSize="36dp">>
+        </Button>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/result_layout"
+        android:layout_below="@+id/math_equals"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Result : "
+            android:textSize="40dp"
+            android:gravity="center">
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/result_tv"
+            android:text="0"
+            android:textSize="47dp"
+            android:gravity="center">
+        </TextView>
+    </LinearLayout>
+
+
+</RelativeLayout>
